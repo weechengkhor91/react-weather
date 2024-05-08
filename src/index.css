@@ -15,9 +15,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/images/bgOverall.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow-x: hidden;
 }
 .height-70 {

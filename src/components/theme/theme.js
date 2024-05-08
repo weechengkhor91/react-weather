@@ -1,5 +1,6 @@
 import { createTheme } from "@mui/material/styles";
-
+import BgDark from "../../assets/images/bgDark.jpg";
+import BgLight from "../../assets/images/bgLight.jpg";
 // dark theme
 // dark mode - set header, text, button color bright
 export const darkTheme = createTheme({
@@ -13,6 +14,7 @@ export const darkTheme = createTheme({
     },
     secondary: {
       main: "#ffffff",
+      light: "rgb(0 0 0 / 40%)",
     },
     info: {
       main: "#26124f",
@@ -28,10 +30,10 @@ export const darkTheme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        "@global": {
-          body: {
-            backgroundImage: 'url("../../assets/images/bgOverall.png")',
-          },
+        body: {
+          backgroundImage: `url('${BgDark}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         },
       },
     },
@@ -126,13 +128,14 @@ export const lightTheme = createTheme({
       main: "#6f40b5",
     },
     secondary: {
-      main: "#252525",
+      main: "#000000",
+      light: "rgb(255 255 255 / 40%)",
     },
     info: {
       main: "#6d40b6",
     },
     text: {
-      primary: "#7f7f7f",
+      primary: "#666",
       secondary: "#6c41b5",
       info: "#252525",
     },
@@ -143,10 +146,10 @@ export const lightTheme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        "@global": {
-          body: {
-            backgroundImage: 'url("../../assets/images/bgOverall.png")',
-          },
+        body: {
+          backgroundImage: `url('${BgLight}')`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         },
       },
     },
@@ -204,7 +207,7 @@ export const lightTheme = createTheme({
     MuiIconButton: {
       styleOverrides: {
         root: {
-          padding: "6px",
+          padding: "0px",
         },
       },
     }, // MuiIconButton

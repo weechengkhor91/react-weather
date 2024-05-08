@@ -101,14 +101,16 @@ const App = () => {
   };
   const formattedDateTime = currentDateTime.toLocaleString("en-US", options);
 
+  // function search location
   const handleSearchLocation = (location) => {
     const data = location;
     //fetch API
     fetchData(data);
   };
 
+  // function delete location
   const handleDeleteLocation = (id) => {
-    console.log("delete location name", id);
+    //console.log("delete location name", id);
     setSearchRecord((prevItems) => {
       const updatedData = prevItems.filter((item) => item.id !== id);
       return updatedData;
@@ -409,8 +411,9 @@ const App = () => {
                         <div key={item.id}>
                           <Box
                             sx={{
-                              backgroundColor: "rgb(0 0 0 / 10%)",
-                              padding: "4px 8px",
+                              // backgroundColor: "rgb(0 0 0 / 10%)",
+                              backgroundColor: "secondary.light",
+                              padding: "8px",
                               borderRadius: "10px",
                               marginBottom: "15px",
                               alignItems: "center",
