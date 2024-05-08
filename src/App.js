@@ -258,7 +258,7 @@ const App = () => {
                     className="weather-icon"
                   >
                     <img
-                      src={`https://openweathermap.org/img/wn/${locationWeather.weatherIcon}@2x.png`}
+                      src={`https://openweathermap.org/img/wn/${locationWeather.weatherIcon}@4x.png`}
                       alt="Weather"
                     />
                   </Grid>
